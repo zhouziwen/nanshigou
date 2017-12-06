@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    style="@style/Layout.Main"
+    android:id="@+id/mainRelativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/topInclude"
+        layout="@layout/include_toolbar" />
+
+    <cn.yokey.view.YoKeyWebView
+        style="@style/Layout.Main"
+        android:id="@+id/mainWebView"
+        android:layout_below="@+id/topInclude"/>
+
+    <ProgressBar
+        android:layout_height="4dip"
+        android:id="@+id/mainProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/topInclude"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+</RelativeLayout>

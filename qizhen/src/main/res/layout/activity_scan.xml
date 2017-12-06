@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    style="@style/Layout.Main"
+    android:id="@+id/mainRelativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SurfaceView
+        style="@style/SurfaceView.Main"
+        android:id="@+id/mainSurfaceView"/>
+
+    <cn.yokey.zxing.view.ViewfinderView
+        style="@style/ViewfinderView.Main"
+        android:id="@+id/mainViewfinderView"/>
+
+    <RelativeLayout
+        style="@style/Layout.Toolbar"
+        android:id="@+id/topRelativeLayout"
+        android:background="@color/transparent">
+
+        <ImageView
+            style="@style/ImageView.Toolbar"
+            android:id="@+id/leftImageView"
+            android:src="@mipmap/ic_action_back"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/titleTextView"
+            style="@style/TextView.Toolbar"
+            android:layout_toRightOf="@+id/leftImageView"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

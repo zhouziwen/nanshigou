@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+    style="@style/Layout.Linear"
+    android:id="@+id/mainLinearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        style="@style/Layout.LinearHor"
+        android:id="@+id/horLinearLayout">
+
+        <RelativeLayout
+            style="@style/Layout.Goods"
+            android:id="@+id/hor1RelativeLayout">
+
+            <ImageView
+                android:id="@+id/hor1ImageView"
+                style="@style/ImageView.ItemGoods"/>
+
+            <ImageView
+                android:id="@+id/hor1BorderImageView"
+                style="@style/ImageView.ItemGoodsBorder"/>
+
+            <TextView
+                android:id="@+id/hor1TitleTextView"
+                style="@style/TextView.ItemTitleGoods"
+                android:layout_below="@+id/hor1ImageView"/>
+
+            <View
+                style="@style/View.line"
+                android:id="@+id/hor1LineView"
+                android:layout_below="@+id/hor1TitleTextView"/>
+
+            <TextView
+                android:layout_below="@+id/hor1LineView"
+                style="@style/TextView.ItemPromotionPrice"
+                android:id="@+id/hor1PromotionPriceTextView"/>
+
+            <TextView
+                style="@style/TextView.ItemPrice"
+                android:id="@+id/hor1PriceTextView"
+                android:layout_below="@+id/hor1LineView"
+                android:layout_toRightOf="@+id/hor1PromotionPriceTextView"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/Layout.Goods"
+            android:id="@+id/hor2RelativeLayout">
+
+            <ImageView
+                android:id="@+id/hor2ImageView"
+                style="@style/ImageView.ItemGoods"/>
+
+            <ImageView
+                android:id="@+id/hor2BorderImageView"
+                style="@style/ImageView.ItemGoodsBorder"/>
+
+            <TextView
+                android:id="@+id/hor2TitleTextView"
+                style="@style/TextView.ItemTitleGoods"
+                android:layout_below="@+id/hor2ImageView"/>
+
+            <View
+                style="@style/View.line"
+                android:id="@+id/hor2LineView"
+                android:layout_below="@+id/hor2TitleTextView"/>
+
+            <TextView
+                android:layout_below="@+id/hor2LineView"
+                style="@style/TextView.ItemPromotionPrice"
+                android:id="@+id/hor2PromotionPriceTextView"/>
+
+            <TextView
+                style="@style/TextView.ItemPrice"
+                android:id="@+id/hor2PriceTextView"
+                android:layout_below="@+id/hor2LineView"
+                android:layout_toRightOf="@+id/hor2PromotionPriceTextView"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/Layout.Item2"
+        android:id="@+id/verRelativeLayout">
+
+        <ImageView
+            android:id="@+id/verImageView"
+            style="@style/ImageView.ItemGoodsVer"/>
+
+        <ImageView
+            android:id="@+id/verBorderImageView"
+            style="@style/ImageView.ItemGoodsBorder"/>
+
+        <TextView
+            android:layout_height="24dip"
+            android:id="@+id/verTimeTextView"
+            style="@style/TextView.ItemTime"/>
+
+        <TextView
+            android:maxLines="2"
+            android:ellipsize="end"
+            style="@style/TextView.ItemTitle"
+            android:id="@+id/verTitleTextView"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/verImageView"/>
+
+        <TextView
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            style="@style/TextView.GoodsPrice"
+            android:id="@+id/verPricePromotionTextView"
+            android:layout_below="@+id/verTitleTextView"
+            android:layout_toRightOf="@+id/verImageView"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:textColor="@color/grey"
+            android:id="@+id/verPriceTextView"
+            style="@style/TextView.GoodsPrice"
+            android:layout_alignTop="@+id/verPricePromotionTextView"
+            android:layout_toRightOf="@+id/verPricePromotionTextView"
+            android:layout_alignBottom="@id/verPricePromotionTextView"/>
+
+    </RelativeLayout>
+    
+</LinearLayout>

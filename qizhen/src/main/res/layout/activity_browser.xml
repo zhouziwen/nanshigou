@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Main">
+
+    <include
+        android:id="@+id/topInclude"
+        layout="@layout/include_toolbar" />
+
+    <cn.yokey.view.YoKeyWebView
+        android:id="@+id/mainWebView"
+        style="@style/Layout.Main"
+        android:layout_above="@+id/bottomLinearLayout"
+        android:layout_below="@+id/topInclude" />
+
+    <ProgressBar
+        android:id="@+id/mainProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="4dip"
+        android:layout_below="@+id/topInclude" />
+
+    <LinearLayout
+        android:id="@+id/bottomLinearLayout"
+        style="@style/Layout.LinearHor"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1px"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/backImageView"
+            style="@style/ImageView.Browser"
+            android:src="@mipmap/ic_browser_nav_back" />
+
+        <ImageView
+            android:id="@+id/nextImageView"
+            style="@style/ImageView.Browser"
+            android:src="@mipmap/ic_browser_nav_next" />
+
+        <ImageView
+            android:id="@+id/refreshImageView"
+            style="@style/ImageView.Browser"
+            android:src="@mipmap/ic_browser_nav_refresh" />
+
+        <ImageView
+            android:id="@+id/topImageView"
+            style="@style/ImageView.Browser"
+            android:src="@mipmap/ic_browser_nav_top" />
+
+        <ImageView
+            android:id="@+id/shareImageView"
+            style="@style/ImageView.Browser"
+            android:src="@mipmap/ic_browser_nav_share" />
+
+    </LinearLayout>
+
+</RelativeLayout>

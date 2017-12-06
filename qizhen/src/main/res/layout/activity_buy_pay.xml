@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Main">
+
+    <include
+        android:id="@+id/topInclude"
+        layout="@layout/include_toolbar" />
+
+    <TextView
+        android:id="@+id/orderIdTextView"
+        style="@style/TextView.UserTitle"
+        android:layout_below="@+id/topInclude"
+        android:drawableLeft="@mipmap/ic_user_order" />
+
+    <TextView
+        android:id="@+id/calcTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderIdTextView"
+        android:background="@color/white"
+        android:padding="16dip" />
+
+    <TextView
+        android:id="@+id/payListTextView"
+        style="@style/TextView.UserTitle"
+        android:layout_below="@+id/calcTextView"
+        android:drawableLeft="@mipmap/ic_user_order_wait_pay"
+        android:text="可用的支付方法" />
+
+    <RadioGroup
+        android:id="@+id/listRadioGroup"
+        style="@style/RadioGroup.Pay"
+        android:layout_below="@+id/payListTextView">
+
+        <RadioButton
+            android:id="@+id/aliPayTextView"
+            style="@style/RadioButton.PayMethod" />
+
+        <RadioButton
+            android:id="@+id/wxPayTextView"
+            style="@style/RadioButton.PayMethod"
+            android:drawableRight="@mipmap/ic_pay_wx"
+            android:text="微信支付" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/payTextView"
+        style="@style/TextView.GoodsBuy"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:text="去支付" />
+
+</RelativeLayout>

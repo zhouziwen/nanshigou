@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    style="@style/Layout.Linear"
+    android:id="@+id/mainLinearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/topInclude"
+        layout="@layout/include_toolbar"/>
+
+    <TextView
+        android:text="地址"
+        android:layout_marginTop="16dip"
+        android:background="@color/white"
+        style="@style/TextView.ItemHomeTitle"/>
+
+    <LinearLayout
+        android:paddingLeft="8dip"
+        android:paddingRight="16dip"
+        android:layout_marginTop="1px"
+        style="@style/Layout.LinearHor"
+        android:background="@color/white">
+
+        <Spinner
+            style="@style/Spinner.Address"
+            android:id="@+id/provinceSpinner"/>
+
+        <Spinner
+            style="@style/Spinner.Address"
+            android:id="@+id/citySpinner"/>
+
+        <Spinner
+            style="@style/Spinner.Address"
+            android:id="@+id/areaSpinner"/>
+
+    </LinearLayout>
+
+    <EditText
+        style="@style/EditText.Address"
+        android:id="@+id/addressEditText"/>
+
+    <TextView
+        android:text="联系人"
+        android:layout_marginTop="16dip"
+        android:background="@color/white"
+        style="@style/TextView.ItemHomeTitle"/>
+
+    <EditText
+        android:inputType="phone"
+        android:hint="请输入手机号码"
+        style="@style/EditText.Address"
+        android:id="@+id/mobilePhoneEditText"/>
+
+    <EditText
+        android:hint="请输入真实姓名"
+        style="@style/EditText.Address"
+        android:id="@+id/trueNameEditText"/>
+
+    <TextView
+        android:text="其他"
+        android:layout_marginTop="16dip"
+        android:background="@color/white"
+        style="@style/TextView.ItemHomeTitle"/>
+
+    <CheckBox
+        android:text="设为默认"
+        style="@style/CheckBox.Setting"
+        android:id="@+id/defaultCheckBox"/>
+
+</LinearLayout>

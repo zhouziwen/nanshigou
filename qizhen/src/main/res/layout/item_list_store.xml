@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    style="@style/Layout.Item2"
+    android:id="@+id/mainRelativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <ImageView
+        android:id="@+id/mainImageView"
+        style="@style/ImageView.ItemStore"/>
+
+    <TextView
+        android:layout_height="24dip"
+        android:id="@+id/timeTextView"
+        style="@style/TextView.ItemTime"/>
+
+    <TextView
+        android:layout_height="24dip"
+        android:id="@+id/titleTextView"
+        style="@style/TextView.ItemTitle"
+        android:layout_toRightOf="@+id/mainImageView"/>
+
+    <TextView
+        style="@style/TextView.ItemStore"
+        android:id="@+id/collectionTextView"
+        android:layout_below="@+id/titleTextView"
+        android:layout_toRightOf="@+id/mainImageView"/>
+
+    <TextView
+        android:id="@+id/goodsTextView"
+        style="@style/TextView.ItemStore"
+        android:layout_below="@+id/titleTextView"
+        android:drawableLeft="@mipmap/ic_item_goods"
+        android:layout_toRightOf="@+id/collectionTextView"/>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mainRelativeLayout"
+    style="@style/Layout.Main"
+    android:paddingBottom="8dip"
+    android:paddingTop="8dip">
+
+    <TextView
+        android:id="@+id/storeTextView"
+        style="@style/TextView.ItemOrderStore" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        style="@style/TextView.ItemOrderStatus" />
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        style="@style/TextView.ItemOrderMain" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/TextView.ItemOrderTitle"
+        android:layout_alignTop="@+id/mainImageView"
+        android:layout_toLeftOf="@+id/info1TextView"
+        android:layout_toRightOf="@+id/mainImageView" />
+
+    <TextView
+        android:id="@+id/info1TextView"
+        style="@style/TextView.ItemOrderInfo1"
+        android:layout_alignTop="@+id/mainImageView" />
+
+    <TextView
+        android:id="@+id/info2TextView"
+        style="@style/TextView.ItemOrderInfo2"
+        android:layout_below="@+id/mainImageView" />
+
+    <RelativeLayout
+        android:id="@+id/buttonRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/info2TextView"
+        android:layout_marginTop="1px"
+        android:background="@drawable/selector_color_white_add"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip">
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/Button.ItemOrderMain"
+            android:layout_width="64dip"
+            android:text="取消订单" />
+
+        <Button
+            android:id="@+id/payButton"
+            style="@style/Button.ItemOrderMain"
+            android:layout_width="64dip"
+            android:layout_alignParentRight="true"
+            android:text="去付款" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            style="@style/Button.ItemOrderMain"
+            android:layout_width="64dip"
+            android:layout_alignParentRight="true"
+            android:text="确认收货" />
+
+        <Button
+            android:id="@+id/commentButton"
+            style="@style/Button.ItemOrderMain"
+            android:layout_width="48dip"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@+id/refundButton"
+            android:text="评 价" />
+
+        <Button
+            android:id="@+id/refundButton"
+            style="@style/Button.ItemOrderMain"
+            android:layout_width="72dip"
+            android:layout_alignParentRight="true"
+            android:text="退货/售后" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

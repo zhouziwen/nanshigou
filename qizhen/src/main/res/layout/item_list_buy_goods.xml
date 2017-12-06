@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mainRelativeLayout"
+    style="@style/Layout.Main"
+    android:paddingBottom="8dip"
+    android:paddingTop="8dip">
+
+    <TextView
+        android:id="@+id/storeTextView"
+        style="@style/TextView.ItemOrderStore" />
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        style="@style/TextView.ItemOrderMain" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/TextView.ItemOrderTitle"
+        android:layout_alignTop="@+id/mainImageView"
+        android:layout_toLeftOf="@+id/info1TextView"
+        android:layout_toRightOf="@+id/mainImageView" />
+
+    <TextView
+        android:id="@+id/info1TextView"
+        style="@style/TextView.ItemOrderInfo1"
+        android:layout_alignTop="@+id/mainImageView" />
+
+    <TextView
+        android:id="@+id/info2TextView"
+        style="@style/TextView.ItemOrderInfo2"
+        android:layout_below="@+id/mainImageView" />
+
+    <EditText
+        android:id="@+id/messageEditText"
+        style="@style/EditText.BuyMessage"
+        android:layout_below="@+id/info2TextView" />
+
+</RelativeLayout>

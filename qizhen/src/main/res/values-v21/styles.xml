@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Animation.Main" parent="@android:style/Animation">
+        <item name="android:activityOpenExitAnimation">@anim/activity_left_out</item>
+        <item name="android:activityOpenEnterAnimation">@anim/activity_right_in</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_right_out</item>
+    </style>
+    <style name="Theme.Main" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/main</item>
+        <item name="android:colorControlNormal">@color/main</item>
+        <item name="android:colorPrimaryDark">@color/mainAdd</item>
+        <item name="android:colorControlHighlight">@color/main</item>
+        <item name="android:colorControlActivated">@color/mainAdd</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Main</item>
+    </style>
+
+</resources>

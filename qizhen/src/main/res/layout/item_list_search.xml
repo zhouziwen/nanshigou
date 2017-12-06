@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    style="@style/Layout.LinearHor"
+    android:id="@+id/mainLinearLayout"
+    android:background="@drawable/selector_color_white_add"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/titleTextView"
+        style="@style/TextView.ItemSearchTitle"/>
+
+    <TextView
+        android:textSize="14sp"
+        android:id="@+id/typeTextView"
+        android:textColor="@color/grey"
+        style="@style/TextView.ItemSearchTitle"/>
+
+</LinearLayout>

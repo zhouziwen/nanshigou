@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.Main">
+
+    <include
+        android:id="@+id/topInclude"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView
+        style="@style/ScrollView.Main"
+        android:layout_below="@+id/topInclude">
+
+        <LinearLayout style="@style/Layout.Linear">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dip">
+
+                <TextView
+                    android:id="@+id/storeTextView"
+                    style="@style/TextView.ItemOrderStore" />
+
+                <TextView
+                    android:id="@+id/statusTextView"
+                    style="@style/TextView.ItemOrderStatus" />
+
+                <ImageView
+                    android:id="@+id/mainImageView"
+                    style="@style/TextView.ItemOrderMain" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/TextView.ItemOrderTitle"
+                    android:layout_alignTop="@+id/mainImageView"
+                    android:layout_toLeftOf="@+id/info1TextView"
+                    android:layout_toRightOf="@+id/mainImageView" />
+
+                <TextView
+                    android:id="@+id/info1TextView"
+                    style="@style/TextView.ItemOrderInfo1"
+                    android:layout_alignTop="@+id/mainImageView" />
+
+                <TextView
+                    android:id="@+id/info2TextView"
+                    style="@style/TextView.ItemOrderInfo2"
+                    android:layout_below="@+id/mainImageView" />
+
+                <TextView
+                    android:id="@+id/timeTextView"
+                    style="@style/TextView.ItemRefundTime"
+                    android:layout_alignTop="@+id/info2TextView" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextView.UserTitle"
+                android:layout_height="48dip"
+                android:layout_marginBottom="0px"
+                android:text="我的退款申请" />
+
+            <RelativeLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.Tool"
+                    android:text="退款编号" />
+
+                <TextView
+                    android:id="@+id/snTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.Tool"
+                    android:text="退款原因" />
+
+                <TextView
+                    android:id="@+id/reasonTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.Tool"
+                    android:text="退款金额" />
+
+                <TextView
+                    android:id="@+id/moneyTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.Tool"
+                    android:text="退款说明" />
+
+                <TextView
+                    android:id="@+id/messageTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.Tool"
+                    android:text="凭证上传" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextView.UserTitle"
+                android:layout_height="48dip"
+                android:layout_marginBottom="0px"
+                android:text="商家退款处理" />
+
+            <RelativeLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.Tool"
+                    android:text="审核状态" />
+
+                <TextView
+                    android:id="@+id/sellerStatusTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.Tool"
+                    android:text="商家备注" />
+
+                <TextView
+                    android:id="@+id/sellerRemarksTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextView.UserTitle"
+                android:layout_height="48dip"
+                android:layout_marginBottom="0px"
+                android:text="商城退款处理" />
+
+            <RelativeLayout style="@style/Layout.Tool">
+
+                <TextView
+                    style="@style/TextView.Tool"
+                    android:text="商城确认" />
+
+                <TextView
+                    android:id="@+id/adminStatusTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/Layout.Tool"
+                android:layout_marginBottom="16dip">
+
+                <TextView
+                    style="@style/TextView.Tool"
+                    android:text="商城备注" />
+
+                <TextView
+                    android:id="@+id/adminRemarksTextView"
+                    style="@style/TextView.ToolValue" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

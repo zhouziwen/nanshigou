@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Main">
+
+    <include
+        android:id="@+id/topInclude"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        style="@style/ScrollView.Main"
+        android:layout_above="@+id/calcTextView"
+        android:layout_below="@+id/topInclude">
+
+        <RelativeLayout style="@style/Layout.Main">
+
+            <TextView
+                android:id="@+id/addressTitleTextView"
+                style="@style/TextView.UserTitle"
+                android:drawableLeft="@mipmap/ic_user_order_wait_receipt"
+                android:text="收货地址" />
+
+            <RelativeLayout
+                android:id="@+id/addressRelativeLayout"
+                style="@style/Layout.Item2"
+                android:layout_below="@+id/addressTitleTextView">
+
+
+                <TextView
+                    android:id="@+id/addressTrueNameTetView"
+                    style="@style/TextView.ItemAddressName" />
+
+                <TextView
+                    android:id="@+id/addressPhoneTextView"
+                    style="@style/TextView.ItemAddressPhone"
+                    android:layout_toRightOf="@+id/addressTrueNameTetView" />
+
+                <TextView
+                    android:id="@+id/addressContentTextView"
+                    style="@style/TextView.ItemAddressArea"
+                    android:layout_below="@+id/addressTrueNameTetView" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/payTitleTextView"
+                style="@style/TextView.UserTitle"
+                android:layout_below="@+id/addressRelativeLayout"
+                android:drawableLeft="@mipmap/ic_user_order_wait_pay"
+                android:text="支付方式" />
+
+            <RelativeLayout
+                android:id="@+id/payRelativeLayout"
+                style="@style/Layout.Item2"
+                android:layout_below="@+id/payTitleTextView">
+
+                <TextView
+                    android:id="@+id/payOnlineTextView"
+                    style="@style/TextView.PayMethod" />
+
+                <TextView
+                    android:id="@+id/payOfflineTextView"
+                    style="@style/TextView.PayMethod"
+                    android:layout_toEndOf="@+id/payOnlineTextView"
+                    android:layout_toRightOf="@+id/payOnlineTextView"
+                    android:text="货到付款" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/invoiceTitleTextView"
+                style="@style/TextView.UserTitle"
+                android:layout_below="@+id/payRelativeLayout"
+                android:drawableLeft="@mipmap/ic_user_property_red"
+                android:text="发票信息" />
+
+            <RelativeLayout
+                android:id="@+id/invoiceRelativeLayout"
+                style="@style/Layout.Item2"
+                android:layout_below="@+id/invoiceTitleTextView">
+
+                <TextView
+                    android:id="@+id/invoiceNoTextView"
+                    style="@style/TextView.PayMethod"
+                    android:text="不索取发票" />
+
+                <TextView
+                    android:id="@+id/invoiceYesTextView"
+                    style="@style/TextView.PayMethod"
+                    android:layout_toEndOf="@+id/invoiceNoTextView"
+                    android:layout_toRightOf="@+id/invoiceNoTextView"
+                    android:text="索取发票" />
+
+            </RelativeLayout>
+
+            <cn.yokey.view.AutoListView
+                android:id="@+id/goodsListView"
+                style="@style/ListView.Main"
+                android:layout_below="@+id/invoiceRelativeLayout" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/calcTextView"
+        style="@style/TextView.GoodsCalc"
+        android:layout_height="48dip"
+        android:layout_toLeftOf="@+id/confirmTextView"
+        android:layout_toStartOf="@+id/confirmTextView" />
+
+    <TextView
+        android:id="@+id/confirmTextView"
+        style="@style/TextView.GoodsBuy"
+        android:layout_height="48dip"
+        android:text="提交订单" />
+
+</RelativeLayout>

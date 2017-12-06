@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    style="@style/Layout.Dialog"
+    android:id="@+id/mainRelativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="确认您的选择"
+        android:id="@+id/titleTextView"
+        style="@style/TextView.DialogTitle"/>
+
+    <TextView
+        android:text="退出程序?"
+        android:id="@+id/contentTextView"
+        style="@style/TextView.DialogContent"
+        android:layout_below="@+id/titleTextView"/>
+
+    <TextView
+        android:id="@+id/confirmTextView"
+        style="@style/TextView.DialogConfirm"
+        android:layout_below="@+id/contentTextView"/>
+
+    <TextView
+        android:id="@+id/cancelTextView"
+        style="@style/TextView.DialogCancel"
+        android:layout_below="@+id/contentTextView"
+        android:layout_toLeftOf="@+id/confirmTextView"/>
+
+</RelativeLayout>

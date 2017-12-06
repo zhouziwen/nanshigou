@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    style="@style/Layout.Main"
+    android:background="@color/black"
+    android:id="@+id/mainRelativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/topInclude"
+        layout="@layout/include_toolbar"/>
+
+    <cn.yokey.view.PhotoViewPager
+        style="@style/ViewPager.Main"
+        android:layout_height="350dip"
+        android:id="@+id/mainViewPager"
+        android:background="@color/black"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    style="@style/Layout.Linear">
+
+    <include
+        android:id="@+id/topInclude"
+        layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/contentLinearLayout"
+        style="@style/Layout.Login">
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            style="@style/EditText.Username" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            style="@style/EditText.Password" />
+
+        <EditText
+            android:id="@+id/passwordRepeatEditText"
+            style="@style/EditText.Password"
+            android:hint="请再次输入密码" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            style="@style/EditText.Email" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/regTextView"
+        style="@style/TextView.Login"
+        android:text="注 册" />
+
+</LinearLayout>

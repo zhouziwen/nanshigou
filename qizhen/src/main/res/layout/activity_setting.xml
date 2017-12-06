@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    style="@style/Layout.Linear"
+    android:id="@+id/mainLinearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/topInclude"
+        layout="@layout/include_toolbar"/>
+
+    <CheckBox
+        android:text="新消息通知"
+        style="@style/CheckBox.Setting"
+        android:layout_marginTop="16dip"
+        android:id="@+id/messageNotifyCheckBox"/>
+
+    <CheckBox
+        android:text="声音提醒"
+        style="@style/CheckBox.Setting"
+        android:id="@+id/messageVoiceNotifyCheckBox"/>
+
+    <CheckBox
+        android:text="震动提醒"
+        style="@style/CheckBox.Setting"
+        android:id="@+id/messageVibratorNotifyCheckBox"/>
+
+    <TextView
+        android:text="清除缓存"
+        style="@style/TextView.Setting"
+        android:layout_marginTop="16dip"
+        android:id="@+id/clearCacheTextView"/>
+
+    <TextView
+        android:text="网络检测"
+        style="@style/TextView.Setting"
+        android:id="@+id/checkNetworkTextView"/>
+
+    <TextView
+        android:text="使用帮助"
+        style="@style/TextView.Setting"
+        android:layout_marginTop="16dip"
+        android:id="@+id/useHelpTextView"/>
+
+    <TextView
+        android:text="关于我们"
+        style="@style/TextView.Setting"
+        android:id="@+id/aboutTextView"/>
+
+</LinearLayout>

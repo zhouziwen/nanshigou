@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    style="@style/Layout.Item2"
+    android:id="@+id/mainRelativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+        android:padding="0dip"
+        style="@style/CheckBox.Setting"
+        android:id="@+id/defaultCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/trueNameTetView"
+        style="@style/TextView.ItemAddressName"/>
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        style="@style/TextView.ItemAddressPhone"
+        android:layout_toRightOf="@+id/trueNameTetView"/>
+
+    <TextView
+        android:id="@+id/addressTextView"
+        style="@style/TextView.ItemAddressArea"
+        android:layout_below="@+id/trueNameTetView"/>
+
+</RelativeLayout>

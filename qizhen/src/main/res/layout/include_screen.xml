@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.HeightWarp">
+
+    <Spinner
+        android:id="@+id/sortSpinner"
+        style="@style/Spinner.Screen"
+        android:layout_toLeftOf="@+id/saleTextView" />
+
+    <TextView
+        android:id="@+id/saleTextView"
+        style="@style/TextView.Screen"
+        android:layout_toLeftOf="@+id/screenTextView"
+        android:text="销量优先" />
+
+    <TextView
+        android:id="@+id/screenTextView"
+        style="@style/TextView.Screen"
+        android:layout_toLeftOf="@+id/listImageView" />
+
+    <ImageView
+        android:id="@+id/listImageView"
+        android:layout_width="56dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        android:src="@mipmap/ic_goods_list_ver" />
+
+    <RelativeLayout
+        android:id="@+id/screenRelativeLayout"
+        style="@style/Layout.Item2"
+        android:layout_below="@+id/sortSpinner"
+        android:layout_marginTop="1px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/moneyTextView"
+            style="@style/TextView.Screen1"
+            android:text="价格区间：" />
+
+        <EditText
+            android:id="@+id/moneyStartEditText"
+            style="@style/EditText.Screen"
+            android:layout_toRightOf="@+id/moneyTextView" />
+
+        <TextView
+            android:id="@+id/moneyLineTextView"
+            style="@style/TextView.Screen1"
+            android:layout_toRightOf="@+id/moneyStartEditText"
+            android:text="一" />
+
+        <EditText
+            android:id="@+id/moneyEndEditText"
+            style="@style/EditText.Screen"
+            android:layout_toRightOf="@+id/moneyLineTextView" />
+
+        <TextView
+            android:id="@+id/moneyUnitTextView"
+            style="@style/TextView.Screen1"
+            android:layout_toRightOf="@+id/moneyEndEditText"
+            android:text="元" />
+
+        <TextView
+            android:id="@+id/goodsTypeTextView"
+            style="@style/TextView.Screen1"
+            android:layout_below="@+id/moneyTextView"
+            android:text="商品类型：" />
+
+        <TextView
+            android:id="@+id/groupGoodsTextView"
+            style="@style/TextView.GoodsActivity1"
+            android:layout_alignTop="@+id/goodsTypeTextView"
+            android:layout_marginTop="8dip"
+            android:layout_toEndOf="@+id/goodsTypeTextView"
+            android:layout_toRightOf="@+id/goodsTypeTextView"
+            android:text="团购商品" />
+
+        <TextView
+            android:id="@+id/xianShiGoodsTextView"
+            style="@style/TextView.GoodsActivity1"
+            android:layout_alignTop="@+id/goodsTypeTextView"
+            android:layout_marginTop="8dip"
+            android:layout_toEndOf="@+id/groupGoodsTextView"
+            android:layout_toRightOf="@+id/groupGoodsTextView"
+            android:text="限时折扣" />
+
+        <TextView
+            android:id="@+id/giftGoodsTextView"
+            style="@style/TextView.GoodsActivity1"
+            android:layout_alignTop="@+id/goodsTypeTextView"
+            android:layout_marginTop="8dip"
+            android:layout_toEndOf="@+id/xianShiGoodsTextView"
+            android:layout_toRightOf="@+id/xianShiGoodsTextView"
+            android:text="有 赠 品" />
+
+        <TextView
+            android:id="@+id/storeTypeTextView"
+            style="@style/TextView.Screen1"
+            android:layout_below="@+id/goodsTypeTextView"
+            android:text="店铺类型：" />
+
+        <TextView
+            android:id="@+id/ownShopTextView"
+            style="@style/TextView.GoodsActivity1"
+            android:layout_alignTop="@+id/storeTypeTextView"
+            android:layout_marginTop="8dip"
+            android:layout_toEndOf="@+id/storeTypeTextView"
+            android:layout_toRightOf="@+id/storeTypeTextView"
+            android:text="平台自营" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

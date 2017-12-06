@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="background">#F0F0F0</color>
+    <color name="backgroundUser">#22000000</color>
+    <color name="backgroundContent">#66000000</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="nav">#5D646F</color>
+    <color name="main">#FF5001</color>
+    <color name="mainAdd">#DD3000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="whiteAdd">#F3F3F3</color>
+
+    <color name="grey">#999999</color>
+    <color name="greySub">#CCCCCC</color>
+    <color name="greyAdd">#666666</color>
+
+    <color name="black">#000000</color>
+    <color name="blackSub">#333333</color>
+
+    <color name="red">#FF0000</color>
+    <color name="redAdd">#DD0000</color>
+
+</resources>

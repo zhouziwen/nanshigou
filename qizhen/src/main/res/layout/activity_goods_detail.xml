@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    style="@style/Layout.Main">
+
+    <LinearLayout
+        android:id="@+id/topLinearLayout"
+        style="@style/Layout.LinearHor">
+
+        <ImageView
+            android:id="@+id/leftImageView"
+            style="@style/ImageView.Toolbar"
+            android:src="@mipmap/ic_action_back" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/TextView.Toolbar" />
+
+        <ImageView
+            android:id="@+id/rightImageView"
+            style="@style/ImageView.Toolbar"
+            android:src="@mipmap/ic_action_collection" />
+
+        <ImageView
+            android:id="@+id/right1ImageView"
+            style="@style/ImageView.Toolbar"
+            android:src="@mipmap/ic_action_share" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        style="@style/ScrollView.Main"
+        android:layout_above="@+id/bottomLinearLayout"
+        android:layout_below="@+id/topLinearLayout">
+
+        <LinearLayout
+            android:id="@+id/scrollLinearLayout"
+            style="@style/Layout.Linear">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/goodsViewPager"
+                style="@style/ViewPager.Main"
+                android:layout_height="300dip" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/TextView.GoodsTitle1"
+                android:paddingTop="8dip" />
+
+            <TextView
+                android:id="@+id/jingleTextView"
+                style="@style/TextView.GoodsJingle" />
+
+            <RelativeLayout
+                style="@style/Layout.LinearHor"
+                android:background="@drawable/selector_color_white_add">
+
+                <TextView
+                    android:id="@+id/pricePromotionTextView"
+                    style="@style/TextView.GoodsPrice" />
+
+                <TextView
+                    android:id="@+id/priceTextView"
+                    style="@style/TextView.GoodsPrice"
+                    android:layout_alignBottom="@id/pricePromotionTextView"
+                    android:layout_alignTop="@+id/pricePromotionTextView"
+                    android:layout_toRightOf="@+id/pricePromotionTextView"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/saleNumTextView"
+                    style="@style/TextView.GoodsPrice"
+                    android:layout_alignBottom="@id/pricePromotionTextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/pricePromotionTextView"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/activityLinearLayout"
+                style="@style/Layout.GoodsContent">
+
+                <TextView
+                    android:id="@+id/activityTextView"
+                    style="@style/TextView.GoodsActivity"
+                    android:text="活动" />
+
+                <TextView
+                    android:id="@+id/activityNameTextView"
+                    style="@style/TextView.GoodsActivity1" />
+
+                <TextView
+                    android:id="@+id/activityRemarkTextView"
+                    style="@style/TextView.GoodsActivity" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/Layout.GoodsContent">
+
+                <TextView
+                    style="@style/TextView.GoodsActivity"
+                    android:text="送至" />
+
+                <TextView
+                    android:id="@+id/addressTextView"
+                    style="@style/TextView.GoodsActivity1" />
+
+                <TextView
+                    android:id="@+id/addressTipTextView"
+                    style="@style/TextView.GoodsActivity" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseLinearLayout"
+                style="@style/Layout.GoodsContent">
+
+                <TextView
+                    style="@style/TextView.GoodsActivity"
+                    android:text="已选" />
+
+                <TextView
+                    android:id="@+id/choose1TextView"
+                    style="@style/TextView.GoodsActivity1" />
+
+                <TextView
+                    android:id="@+id/choose2TextView"
+                    style="@style/TextView.GoodsActivity1"
+                    android:layout_marginLeft="0dip" />
+
+                <TextView
+                    style="@style/TextView.GoodsActivity"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@mipmap/ic_normal_dot_left" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commentLinearLayout"
+                style="@style/Layout.GoodsContent"
+                android:layout_marginTop="16dip">
+
+                <TextView
+                    style="@style/TextView.GoodsActivity"
+                    android:text="评价" />
+
+                <TextView
+                    android:id="@+id/commentTextView"
+                    style="@style/TextView.GoodsActivity1" />
+
+                <TextView
+                    android:id="@+id/commentNumTextView"
+                    style="@style/TextView.GoodsActivity1"
+                    android:layout_marginLeft="0dip" />
+
+                <TextView
+                    style="@style/TextView.GoodsActivity"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@mipmap/ic_normal_dot_left" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bodyTextView"
+                style="@style/TextView.GoodsTitle"
+                android:text="商品介绍" />
+
+            <TextView
+                android:id="@+id/storeTextView"
+                style="@style/TextView.GoodsTitle"
+                android:drawableLeft="@mipmap/ic_goods_store" />
+
+            <LinearLayout
+                android:id="@+id/storeLinearLayout"
+                style="@style/Layout.GoodsContent">
+
+                <TextView
+                    android:id="@+id/storeDescTextView"
+                    style="@style/TextView.GoodsActivity" />
+
+                <TextView
+                    android:id="@+id/storeDescStatusTextView"
+                    style="@style/TextView.GoodsActivity1" />
+
+                <TextView
+                    android:id="@+id/storeServerTextView"
+                    style="@style/TextView.GoodsActivity" />
+
+                <TextView
+                    android:id="@+id/storeServerStatusTextView"
+                    style="@style/TextView.GoodsActivity1" />
+
+                <TextView
+                    android:id="@+id/storeDeliveryTextView"
+                    style="@style/TextView.GoodsActivity" />
+
+                <TextView
+                    android:id="@+id/storeDeliveryStatusTextView"
+                    style="@style/TextView.GoodsActivity1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/goodsTitleTextView"
+                style="@style/TextView.ItemHomeTitle"
+                android:layout_marginTop="8dip"
+                android:text="店铺推荐"
+                android:textColor="@color/greyAdd" />
+
+            <cn.yokey.view.AutoListView
+                android:id="@+id/mainListView"
+                style="@style/ListView.Line" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLinearLayout"
+        style="@style/Layout.LinearHor"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1px">
+
+        <TextView
+            android:id="@+id/kefuTextView"
+            style="@style/TextView.GoodsBottom" />
+
+        <TextView
+            android:id="@+id/cartTextView"
+            style="@style/TextView.GoodsBottom"
+            android:drawableTop="@mipmap/ic_goods_cart"
+            android:text="购物车" />
+
+        <TextView
+            android:id="@+id/joinCartTextView"
+            style="@style/TextView.GoodsBottom1" />
+
+        <TextView
+            android:id="@+id/buyTextView"
+            style="@style/TextView.GoodsBottom1"
+            android:background="@drawable/selector_color_red_add"
+            android:drawableTop="@mipmap/ic_collection_store"
+            android:text="立即购买" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/backgroundTextView"
+        style="@style/TextView.Background"
+        android:layout_below="@+id/topLinearLayout"/>
+
+    <RelativeLayout
+        android:id="@+id/qrCodeRelativeLayout"
+        style="@style/Layout.QRCode">
+
+        <TextView style="@style/TextView.QRCodeTitle" />
+
+        <ImageView
+            android:id="@+id/qrCodeCloseImageView"
+            style="@style/ImageView.QRCodeClose" />
+
+        <View
+            android:id="@+id/qrCode1LineView"
+            style="@style/View.line"
+            android:layout_below="@+id/qrCodeCloseImageView"
+            android:layout_marginTop="16dip" />
+
+        <ImageView
+            android:id="@+id/qrCodeContentImageView"
+            style="@style/ImageView.QRCodeContent"
+            android:layout_below="@+id/qrCode1LineView" />
+
+        <View
+            android:id="@+id/qrCode2LineView"
+            style="@style/View.line"
+            android:layout_below="@+id/qrCodeContentImageView"
+            android:layout_marginBottom="16dip" />
+
+        <TextView
+            android:id="@+id/qrCodeOtherTextView"
+            style="@style/TextView.QRCodeContent"
+            android:layout_below="@+id/qrCode2LineView" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/chooseRelativeLayout"
+        style="@style/Layout.HeightWarp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/chooseImageView"
+            style="@style/ImageView.UserHead" />
+
+        <TextView
+            android:id="@+id/chooseNameTextView"
+            style="@style/TextView.GoodsTitle1"
+            android:layout_toEndOf="@+id/chooseImageView"
+            android:layout_toRightOf="@+id/chooseImageView"
+            android:background="@null"
+            android:paddingBottom="0dip"
+            android:paddingLeft="8dip"
+            android:paddingTop="0dip"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/choosePriceTextView"
+            style="@style/TextView.GoodsPrice"
+            android:layout_below="@+id/chooseNameTextView"
+            android:layout_toEndOf="@+id/chooseImageView"
+            android:layout_toRightOf="@+id/chooseImageView"
+            android:background="@null"
+            android:paddingLeft="8dip" />
+
+        <TextView
+            android:id="@+id/chooseStorageTextView"
+            style="@style/TextView.GoodsJingle"
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@+id/choosePriceTextView"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/choosePriceTextView"
+            android:background="@null"
+            android:gravity="center"
+            android:padding="0dip" />
+
+        <View
+            android:id="@+id/chooseLine1View"
+            style="@style/View.line"
+            android:layout_below="@+id/chooseImageView"
+            android:layout_marginTop="8dip" />
+
+        <TextView
+            android:id="@+id/chooseSpec1TextView"
+            style="@style/TextView.GoodsJingle"
+            android:layout_below="@+id/chooseLine1View"
+            android:background="@null"
+            android:paddingLeft="0dip"
+            android:text="颜色：" />
+
+        <HorizontalScrollView
+            android:id="@+id/chooseSpec1ScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:layout_below="@+id/chooseSpec1TextView"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/chooseSpec1Attr1TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:text="红色" />
+
+                <TextView
+                    android:id="@+id/chooseSpec1Attr2TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec1Attr1TextView"
+                    android:text="红色" />
+
+                <TextView
+                    android:id="@+id/chooseSpec1Attr3TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec1Attr2TextView"
+                    android:text="红色" />
+
+                <TextView
+                    android:id="@+id/chooseSpec1Attr4TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec1Attr3TextView"
+                    android:text="红色" />
+
+                <TextView
+                    android:id="@+id/chooseSpec1Attr5TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec1Attr4TextView"
+                    android:text="红色" />
+
+                <TextView
+                    android:id="@+id/chooseSpec1Attr6TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec1Attr5TextView"
+                    android:text="红色" />
+
+                <TextView
+                    android:id="@+id/chooseSpec1Attr7TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec1Attr6TextView"
+                    android:text="红色" />
+
+                <TextView
+                    android:id="@+id/chooseSpec1Attr8TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec1Attr7TextView"
+                    android:text="红色" />
+
+                <TextView
+                    android:id="@+id/chooseSpec1Attr9TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec1Attr8TextView"
+                    android:text="红色" />
+
+                <TextView
+                    android:id="@+id/chooseSpec1Attr10TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec1Attr9TextView"
+                    android:text="红色" />
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:id="@+id/chooseLine2View"
+            style="@style/View.line"
+            android:layout_below="@+id/chooseSpec1ScrollView"
+            android:layout_marginTop="8dip" />
+
+        <TextView
+            android:id="@+id/chooseSpec2TextView"
+            style="@style/TextView.GoodsJingle"
+            android:layout_below="@+id/chooseLine2View"
+            android:background="@null"
+            android:paddingLeft="0dip"
+            android:text="尺码：" />
+
+        <HorizontalScrollView
+            android:id="@+id/chooseSpec2ScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:layout_below="@+id/chooseSpec2TextView"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/chooseSpec2Attr1TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:text="S" />
+
+                <TextView
+                    android:id="@+id/chooseSpec2Attr2TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec2Attr1TextView"
+                    android:text="M" />
+
+                <TextView
+                    android:id="@+id/chooseSpec2Attr3TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec2Attr2TextView"
+                    android:text="L" />
+
+                <TextView
+                    android:id="@+id/chooseSpec2Attr4TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec2Attr3TextView"
+                    android:text="XL" />
+
+                <TextView
+                    android:id="@+id/chooseSpec2Attr5TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec2Attr4TextView"
+                    android:text="XXL" />
+
+                <TextView
+                    android:id="@+id/chooseSpec2Attr6TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec2Attr5TextView"
+                    android:text="XXXL" />
+
+                <TextView
+                    android:id="@+id/chooseSpec2Attr7TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec2Attr6TextView"
+                    android:text="XXXXL" />
+
+                <TextView
+                    android:id="@+id/chooseSpec2Attr8TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec2Attr7TextView"
+                    android:text="28" />
+
+                <TextView
+                    android:id="@+id/chooseSpec2Attr9TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec2Attr8TextView"
+                    android:text="29" />
+
+                <TextView
+                    android:id="@+id/chooseSpec2Attr10TextView"
+                    style="@style/TextView.GoodsChooseAttr"
+                    android:layout_toRightOf="@+id/chooseSpec2Attr9TextView"
+                    android:text="30" />
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:id="@+id/chooseLine3View"
+            style="@style/View.line"
+            android:layout_below="@+id/chooseSpec2ScrollView"
+            android:layout_marginTop="8dip" />
+
+        <RelativeLayout
+            android:id="@+id/chooseNumberRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@+id/chooseLine3View">
+
+            <TextView
+                android:id="@+id/chooseNumberTextView"
+                style="@style/TextView.GoodsJingle"
+                android:layout_height="40dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="0dip"
+                android:text="购买数量：" />
+
+            <Button
+                android:id="@+id/chooseAddButton"
+                style="@style/Button.ItemOrderMain"
+                android:layout_width="28dip"
+                android:layout_alignParentRight="true"
+                android:text="+" />
+
+            <EditText
+                android:id="@+id/chooseNumberEditText"
+                style="@style/Button.ItemOrderMain"
+                android:layout_width="36dip"
+                android:layout_alignTop="@+id/chooseAddButton"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:layout_toLeftOf="@+id/chooseAddButton"
+                android:layout_toStartOf="@+id/chooseAddButton"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/chooseSubButton"
+                style="@style/Button.ItemOrderMain"
+                android:layout_width="28dip"
+                android:layout_alignTop="@+id/chooseNumberEditText"
+                android:layout_toLeftOf="@+id/chooseNumberEditText"
+                android:layout_toStartOf="@+id/chooseNumberEditText"
+                android:text="-" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/chooseLine4View"
+            style="@style/View.line"
+            android:layout_below="@+id/chooseNumberRelativeLayout"
+            android:layout_marginBottom="16dip" />
+
+        <Button
+            android:id="@+id/chooseBuyButton"
+            style="@style/Button.ItemOrderMain"
+            android:layout_width="80dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/chooseLine4View"
+            android:layout_marginLeft="8dip"
+            android:text="立即购买" />
+
+        <Button
+            android:id="@+id/chooseCartButton"
+            style="@style/Button.ItemOrderMain"
+            android:layout_width="96dip"
+            android:layout_below="@+id/chooseLine4View"
+            android:layout_toLeftOf="@+id/chooseBuyButton"
+            android:layout_toStartOf="@+id/chooseBuyButton"
+            android:text="加入购物车" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

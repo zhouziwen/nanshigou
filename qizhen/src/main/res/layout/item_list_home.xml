@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    style="@style/Layout.Linear">
+
+    <RelativeLayout
+        android:id="@+id/advListRelativeLayout"
+        style="@style/Layout.HeightWarp"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/advListViewPager"
+            style="@style/ViewPager.Main"
+            android:layout_height="160dip" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/navRadioGroup"
+        style="@style/RadioGroup.HomeNav"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/navClassRadioButton"
+            style="@style/RadioButton.HomeNav"
+            android:drawableTop="@mipmap/ic_home_nav_class"
+            android:text="所有分类" />
+
+        <RadioButton
+            android:id="@+id/navCartRadioButton"
+            style="@style/RadioButton.HomeNav"
+            android:drawableTop="@mipmap/ic_home_nav_cart"
+            android:text="购物的车" />
+
+        <RadioButton
+            android:id="@+id/navUserRadioButton"
+            style="@style/RadioButton.HomeNav"
+            android:drawableTop="@mipmap/ic_home_nav_user"
+            android:text="我的商城" />
+
+        <RadioButton
+            android:id="@+id/navSignRadioButton"
+            style="@style/RadioButton.HomeNav"
+            android:drawableTop="@mipmap/ic_home_nav_sign"
+            android:text="每日签到" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/home2LinearLayout"
+        style="@style/Layout.Linear"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/home2TitleTextView"
+            style="@style/TextView.ItemHomeTitle" />
+
+        <LinearLayout style="@style/Layout.LinearHor">
+
+            <ImageView
+                android:id="@+id/home2OneImageView"
+                style="@style/ImageView.ItemHomeMax"
+                android:layout_marginRight="1px" />
+
+            <LinearLayout
+                style="@style/Layout.Linear"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/home2TwoImageView"
+                    style="@style/ImageView.ItemHomeMin" />
+
+                <ImageView
+                    android:id="@+id/home2ThrImageView"
+                    style="@style/ImageView.ItemHomeMin"
+                    android:layout_marginTop="1px" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home4LinearLayout"
+        style="@style/Layout.Linear"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/home4TitleTextView"
+            style="@style/TextView.ItemHomeTitle" />
+
+        <LinearLayout style="@style/Layout.LinearHor">
+
+            <LinearLayout
+                style="@style/Layout.Linear"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/home4TwoImageView"
+                    style="@style/ImageView.ItemHomeMin" />
+
+                <ImageView
+                    android:id="@+id/home4ThrImageView"
+                    style="@style/ImageView.ItemHomeMin"
+                    android:layout_marginTop="1px" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home4OneImageView"
+                style="@style/ImageView.ItemHomeMax"
+                android:layout_marginLeft="1px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goodsLinearLayout"
+        style="@style/Layout.Item1"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/goodsTitleTextView"
+            style="@style/TextView.ItemHomeTitle" />
+
+        <LinearLayout style="@style/Layout.LinearHor">
+
+            <RelativeLayout
+                android:id="@+id/goods1RelativeLayout"
+                style="@style/Layout.Goods">
+
+                <ImageView
+                    android:id="@+id/goods1ImageView"
+                    style="@style/ImageView.ItemGoods" />
+
+                <ImageView
+                    android:id="@+id/goods1BorderImageView"
+                    style="@style/ImageView.ItemGoodsBorder" />
+
+                <TextView
+                    android:id="@+id/goods1TitleTextView"
+                    style="@style/TextView.ItemTitleGoods"
+                    android:layout_below="@+id/goods1ImageView" />
+
+                <View
+                    android:id="@+id/goods1LineView"
+                    style="@style/View.line"
+                    android:layout_below="@+id/goods1TitleTextView" />
+
+                <TextView
+                    android:id="@+id/goods1PromotionPriceTextView"
+                    style="@style/TextView.ItemPromotionPrice"
+                    android:layout_below="@+id/goods1LineView" />
+
+                <TextView
+                    android:id="@+id/goods1PriceTextView"
+                    style="@style/TextView.ItemPrice"
+                    android:layout_below="@+id/goods1LineView"
+                    android:layout_toRightOf="@+id/goods1PromotionPriceTextView" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/goods2RelativeLayout"
+                style="@style/Layout.Goods">
+
+                <ImageView
+                    android:id="@+id/goods2ImageView"
+                    style="@style/ImageView.ItemGoods" />
+
+                <ImageView
+                    android:id="@+id/goods2BorderImageView"
+                    style="@style/ImageView.ItemGoodsBorder" />
+
+                <TextView
+                    android:id="@+id/goods2TitleTextView"
+                    style="@style/TextView.ItemTitleGoods"
+                    android:layout_below="@+id/goods2ImageView" />
+
+                <View
+                    android:id="@+id/goods2LineView"
+                    style="@style/View.line"
+                    android:layout_below="@+id/goods2TitleTextView" />
+
+                <TextView
+                    android:id="@+id/goods2PromotionPriceTextView"
+                    style="@style/TextView.ItemPromotionPrice"
+                    android:layout_below="@+id/goods2LineView" />
+
+                <TextView
+                    android:id="@+id/goods2PriceTextView"
+                    style="@style/TextView.ItemPrice"
+                    android:layout_below="@+id/goods2LineView"
+                    android:layout_toRightOf="@+id/goods2PromotionPriceTextView" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout.LinearHor">
+
+            <RelativeLayout
+                android:id="@+id/goods3RelativeLayout"
+                style="@style/Layout.Goods">
+
+                <ImageView
+                    android:id="@+id/goods3ImageView"
+                    style="@style/ImageView.ItemGoods" />
+
+                <ImageView
+                    android:id="@+id/goods3BorderImageView"
+                    style="@style/ImageView.ItemGoodsBorder" />
+
+                <TextView
+                    android:id="@+id/goods3TitleTextView"
+                    style="@style/TextView.ItemTitleGoods"
+                    android:layout_below="@+id/goods3ImageView" />
+
+                <View
+                    android:id="@+id/goods3LineView"
+                    style="@style/View.line"
+                    android:layout_below="@+id/goods3TitleTextView" />
+
+                <TextView
+                    android:id="@+id/goods3PromotionPriceTextView"
+                    style="@style/TextView.ItemPromotionPrice"
+                    android:layout_below="@+id/goods3LineView" />
+
+                <TextView
+                    android:id="@+id/goods3PriceTextView"
+                    style="@style/TextView.ItemPrice"
+                    android:layout_below="@+id/goods3LineView"
+                    android:layout_toRightOf="@+id/goods3PromotionPriceTextView" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/goods4RelativeLayout"
+                style="@style/Layout.Goods">
+
+                <ImageView
+                    android:id="@+id/goods4ImageView"
+                    style="@style/ImageView.ItemGoods" />
+
+                <ImageView
+                    android:id="@+id/goods4BorderImageView"
+                    style="@style/ImageView.ItemGoodsBorder" />
+
+                <TextView
+                    android:id="@+id/goods4TitleTextView"
+                    style="@style/TextView.ItemTitleGoods"
+                    android:layout_below="@+id/goods4ImageView" />
+
+                <View
+                    android:id="@+id/goods4LineView"
+                    style="@style/View.line"
+                    android:layout_below="@+id/goods4TitleTextView" />
+
+                <TextView
+                    android:id="@+id/goods4PromotionPriceTextView"
+                    style="@style/TextView.ItemPromotionPrice"
+                    android:layout_below="@+id/goods4LineView" />
+
+                <TextView
+                    android:id="@+id/goods4PriceTextView"
+                    style="@style/TextView.ItemPrice"
+                    android:layout_below="@+id/goods4LineView"
+                    android:layout_toRightOf="@+id/goods4PromotionPriceTextView" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout.LinearHor">
+
+            <RelativeLayout
+                android:id="@+id/goods5RelativeLayout"
+                style="@style/Layout.Goods">
+
+                <ImageView
+                    android:id="@+id/goods5ImageView"
+                    style="@style/ImageView.ItemGoods" />
+
+                <ImageView
+                    android:id="@+id/goods5BorderImageView"
+                    style="@style/ImageView.ItemGoodsBorder" />
+
+                <TextView
+                    android:id="@+id/goods5TitleTextView"
+                    style="@style/TextView.ItemTitleGoods"
+                    android:layout_below="@+id/goods5ImageView" />
+
+                <View
+                    android:id="@+id/goods5LineView"
+                    style="@style/View.line"
+                    android:layout_below="@+id/goods5TitleTextView" />
+
+                <TextView
+                    android:id="@+id/goods5PromotionPriceTextView"
+                    style="@style/TextView.ItemPromotionPrice"
+                    android:layout_below="@+id/goods5LineView" />
+
+                <TextView
+                    android:id="@+id/goods5PriceTextView"
+                    style="@style/TextView.ItemPrice"
+                    android:layout_below="@+id/goods5LineView"
+                    android:layout_toRightOf="@+id/goods5PromotionPriceTextView" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/goods6RelativeLayout"
+                style="@style/Layout.Goods">
+
+                <ImageView
+                    android:id="@+id/goods6ImageView"
+                    style="@style/ImageView.ItemGoods" />
+
+                <ImageView
+                    android:id="@+id/goods6BorderImageView"
+                    style="@style/ImageView.ItemGoodsBorder" />
+
+                <TextView
+                    android:id="@+id/goods6TitleTextView"
+                    style="@style/TextView.ItemTitleGoods"
+                    android:layout_below="@+id/goods6ImageView" />
+
+                <View
+                    android:id="@+id/goods6LineView"
+                    style="@style/View.line"
+                    android:layout_below="@+id/goods6TitleTextView" />
+
+                <TextView
+                    android:id="@+id/goods6PromotionPriceTextView"
+                    style="@style/TextView.ItemPromotionPrice"
+                    android:layout_below="@+id/goods6LineView" />
+
+                <TextView
+                    android:id="@+id/goods6PriceTextView"
+                    style="@style/TextView.ItemPrice"
+                    android:layout_below="@+id/goods6LineView"
+                    android:layout_toRightOf="@+id/goods6PromotionPriceTextView" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

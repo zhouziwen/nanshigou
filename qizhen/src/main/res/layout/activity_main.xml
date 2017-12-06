@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost
+    style="@style/Layout.Main"
+    android:id="@+id/mainTabHost"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        style="@style/Layout.Linear"
+        android:id="@+id/mainLinearLayout">
+
+        <FrameLayout
+            style="@style/Layout.Main"
+            android:id="@android:id/tabcontent"/>
+
+        <TabWidget
+            android:visibility="gone"
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            style="@style/RadioGroup.Nav"
+            android:id="@+id/mainRadioGroup">
+
+            <RadioButton
+                android:text="首页"
+                style="@style/RadioButton.Nav"
+                android:textColor="@color/main"
+                android:id="@+id/homeRadioButton"
+                android:drawableTop="@mipmap/ic_nav_home_press"/>
+
+            <RadioButton
+                android:text="分类"
+                style="@style/RadioButton.Nav"
+                android:id="@+id/classRadioButton"
+                android:drawableTop="@mipmap/ic_nav_class"/>
+
+            <RadioButton
+                android:text="购物车"
+                style="@style/RadioButton.Nav"
+                android:id="@+id/cartRadioButton"
+                android:drawableTop="@mipmap/ic_nav_cart"/>
+
+            <RadioButton
+                android:text="个人"
+                style="@style/RadioButton.Nav"
+                android:id="@+id/userRadioButton"
+                android:drawableTop="@mipmap/ic_nav_user"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</TabHost>
